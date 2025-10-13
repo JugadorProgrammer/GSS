@@ -17,4 +17,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GSS.Domain\GSS.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
