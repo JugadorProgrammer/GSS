@@ -1,0 +1,6 @@
+@GSS.Application_HostAddress = http://localhost:5075
+
+GET {{GSS.Application_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
