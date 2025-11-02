@@ -6,6 +6,6 @@
 
         public required User User { get; init; }
 
-        public required Group? Group { get; init; }
+        public required Group Group { get; init; }
     }
 }
