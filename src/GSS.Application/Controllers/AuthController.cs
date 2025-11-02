@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GSS.Application.Controllers
 {
     [Route("auth")]
+    [ApiController]
     public class AuthController : ControllerBase
     {
         private readonly IUserService _userService;

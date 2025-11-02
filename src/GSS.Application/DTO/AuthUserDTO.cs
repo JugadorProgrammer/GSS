@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace GSS.Application.DTO
+﻿namespace GSS.Application.DTO
 {
     public record AuthUserDTO
     {
