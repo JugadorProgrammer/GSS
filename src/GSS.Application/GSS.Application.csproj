@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\GSS.Domain\GSS.Domain.csproj" />
     <ProjectReference Include="..\GSS.Infrastructure\GSS.Infrastructure.csproj" />
   </ItemGroup>

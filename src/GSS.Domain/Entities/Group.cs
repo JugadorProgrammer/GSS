@@ -1,6 +1,6 @@
 ﻿namespace GSS.Domain.Entities
 {
-    public record Group
+    public record Group : IDomainEntity<Guid>
     {
         public required Guid Id { get; init; }
 

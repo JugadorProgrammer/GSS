@@ -1,6 +1,6 @@
 ﻿namespace GSS.Domain.Entities
 {
-    public record Connection
+    public record Connection : IDomainEntity<string>
     {
         public required string Id { get; init; }
 

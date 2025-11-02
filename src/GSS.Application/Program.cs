@@ -1,3 +1,5 @@
+using GSS.Application.Extensions;
+
 namespace GSS.Application
 {
     public class Program
@@ -7,7 +9,9 @@ namespace GSS.Application
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.AddOptions();
+            builder.AddServices();
+            builder.AddAuth();
             builder.Services.AddControllers();
 
             var app = builder.Build();
@@ -16,8 +20,8 @@ namespace GSS.Application
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
-
 
             app.MapControllers();
 
