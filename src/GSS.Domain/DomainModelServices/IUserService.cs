@@ -6,6 +6,8 @@ namespace GSS.Domain.DomainModelServices
 {
     public interface IUserService
     {
+        Task<Result<Guid, AuthorizeUserOperationResult>> GetAuthorizeUserId();
+
         Task<Result<User, UserGetOperationResult>> GetUser(string login, string password);
 
         Task<Result<User, UserCreateOperationResult>> CreateUser(string login, string password);

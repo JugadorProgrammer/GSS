@@ -36,7 +36,7 @@ namespace GSS.Application.Controllers
                 return BadRequest("User not found");
             }
 
-            var user = result.Entity;
+            var user = result.Model;
             if (user is null)
             {
                 return StatusCode(500, "Internal Server Error");
@@ -60,7 +60,7 @@ namespace GSS.Application.Controllers
                     return BadRequest("User already exists");
             }
 
-            var user = result.Entity;
+            var user = result.Model;
             if (user is null)
             {
                 return StatusCode(500, "Internal Server Error");

@@ -26,7 +26,7 @@ namespace GSS.Application.Controllers
                 return BadRequest("Invalid group name");
             }
 
-            var group = result.Entity;
+            var group = result.Model;
             if (group is null)
             {
                 return StatusCode(500, "Internal Server Error");
